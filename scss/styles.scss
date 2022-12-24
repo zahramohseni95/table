@@ -1,2 +1,23 @@
 // Include any default variable overrides here (though functions won't be available)
+$primary: #318fbb;
+$table-cell-padding-y:0.7rem;
+$table-striped-bg:rgba($primary,0.05);
+$table-border-color:$table-striped-bg;
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+.table-head {
+  th>span {
+    width: 30px;
+    height: 30px;
+    background-color:$table-striped-bg ;
+  }
+}
+.table-body{
+    td{
+        text-align: center;
+    }
+    .table-link{
+        color: unset !important;
+    }
+}
